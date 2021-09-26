@@ -1,0 +1,30 @@
+.slick-container {
+  padding-top: 100px;
+  padding-bottom: 0;
+  .item {
+    .item-logo {
+      padding: 12px 10px;
+      height: 100px;
+      display: flex;
+      align-items: center;
+      margin-right: 15px;
+      border-radius: 20px;
+      border: 1px solid rgb(226, 226, 226);
+      &:hover {
+        border: 2px solid #6b63ff4b;
+      }
+      > img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        padding: 5px;
+      }
+    }
+  }
+  .slick-slide{
+    >div{
+      padding: 0 15px;
+    }
+
+  }
+}

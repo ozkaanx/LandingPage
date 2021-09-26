@@ -1,0 +1,103 @@
+.news-section {
+  width: 100%;
+  background-color: #957dff;
+  margin-top: 100px;
+  background-image: url(../../assets/bgpat.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  .col-media {
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    > img {
+      max-width: 100%;
+      height: auto;
+      vertical-align: middle;
+    }
+  }
+  .news-head {
+    position: relative;
+    padding-left: 20px;
+    .news-title {
+      color: white;
+      text-decoration: none;
+      font-size: 25px;
+      font-weight: 600;
+      font-family: "Poppins", sans-serif;
+      letter-spacing: 2px;
+      position: relative;
+      line-height: 3;
+      &::after {
+        content: "";
+        width: 100%;
+        height: 2px;
+        background-color: rgba(255, 255, 255, 0.692);
+        position: absolute;
+        left: 0;
+        bottom: -2px;
+      }
+    }
+    > h3 {
+      color: white;
+      font-size: 35px;
+      font-weight: 600;
+      font-family: "Source Sans Pro", sans-serif;
+      letter-spacing: 1px;
+      margin-bottom: 15px;
+    }
+    > p {
+      color: white;
+      font-size: 15px;
+      font-weight: 400;
+      font-family: "Poppins", sans-serif;
+      margin-bottom: 40px;
+    }
+  }
+  .news-form {
+    position: relative;
+    max-width: 500px;
+    padding-left: 20px;
+    .form-group {
+      position: relative;
+      display: flex;
+      flex-wrap: wrap;
+      margin-bottom: 20px;
+      > input {
+        height: 55px;
+        padding: 5px 30px;
+        border-radius: 50px;
+        flex: 1 auto;
+        font-size: 15px;
+        font-family: "Poppins", sans-serif;
+        width: 100%;
+      }
+      button {
+        position: absolute;
+        right: 5px;
+        top: 5px;
+        padding: 10px 30px;
+        background: #957dff;
+        color: white;
+        font-family: "Poppins", sans-serif;
+        border-radius: 50px;
+        font-weight: 500;
+        font-size: 15px;
+        transition: 600ms all;
+        &:hover {
+          background: #6045db;
+        }
+        @media screen and (max-width : 350px) {
+          padding: 12px 12px;
+          font-size: 13px;
+          
+        }
+      }
+    }
+  }
+}

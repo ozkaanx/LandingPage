@@ -1,0 +1,90 @@
+.about-section {
+  position: relative;
+  margin-top: 70px;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  .col-media {
+    position: relative;
+    overflow: hidden;
+    padding: 20px;
+    > img {
+      max-width: 100%;
+      height: auto;
+      vertical-align: middle;
+    }
+  }
+  .about-content {
+    .content-head {
+      position: relative;
+      line-height: 3;
+      > a {
+        text-decoration: none;
+        font-size: 22px;
+        color: #6c63ff;
+        font-family: "Poppins", sans-serif;
+        font-weight: 600;
+        letter-spacing: 0.5px;
+        position: relative;
+        &::after {
+          content: "";
+          width: 100%;
+          height: 2px;
+          position: absolute;
+          background-color: #6b63ff63;
+          left: 0;
+          bottom: 0px;
+        }
+      }
+      > h2 {
+        font-family: "Source Sans Pro", sans-serif;
+        font-size: 35px;
+        color: #1f2471;
+        font-weight: 700;
+        margin-bottom: 20px;
+      }
+    }
+    .about-text {
+      font-size: 15px;
+      font-family: "Poppins", sans-serif;
+      line-height: 1.7;
+      color: #505489;
+      &-last {
+        font-size: 15px;
+        font-family: "Poppins", sans-serif;
+        line-height: 1.7;
+        color: #505489;
+      }
+    }
+    .about-button {
+      text-decoration: none;
+      height: 50px;
+      font-size: 20px;
+      color: #6c63ff;
+      font-family: "Source Sans Pro", sans-serif;
+      font-weight: 500;
+      z-index: 99;
+      display: flex;
+      align-items: center;
+      > i {
+        color: white;
+        position: relative;
+        align-items: center;
+        padding: 10px 15px;
+        margin-right: 10px;
+        &::after {
+          width: 40px;
+          height: 40px;
+          background-color: #6c63ff;
+          border-radius: 50%;
+          margin-right: 10px;
+          box-shadow: 0 15px 20px rgba(5, 16, 39, 0.1);
+          position: absolute;
+          content: "";
+          left: 0;
+          z-index: -1;
+          top: 0;
+        }
+      }
+    }
+  }
+}
